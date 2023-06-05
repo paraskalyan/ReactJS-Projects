@@ -34,17 +34,18 @@ const Quotes = () => {
             .catch(error => console.error(error));
     }, [category])
 
+
     const [shareQuote, setShareQuote] = useState(null);
     const url = " ";
     const title = "Example Website Title";
     const Main = styled.div`
         background-color: #026d64;
-        width: 50%;
+        width: 700px;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        justify-content: center;
         padding: 50px;
         gap: 10px;
         @media screen and (max-width:700px) {
@@ -59,9 +60,6 @@ const Quotes = () => {
         background-color: black;
         color: white;
         padding: 0 10px;
-        
-
-        
     `
     const Buttons = styled.div`
 
@@ -76,7 +74,7 @@ const Quotes = () => {
     const Button = styled.button`
         width: 150px;
         padding: 10px 20px;
-        font-size: 1.3rem;
+        font-size: 1rem;
         background-color: #fff;
         border: none;
         cursor: pointer;
@@ -96,8 +94,9 @@ const Quotes = () => {
     const Text = styled.h1`
         text-align: center;
         color: white;
+        font-size: 1.3rem;
         @media screen and (max-width:700px) {
-           font-size: 1.4rem;
+           font-size: 1.2rem;
            
         }
         
@@ -117,6 +116,7 @@ const Quotes = () => {
     const Author = styled.h2`
         color: #dbdbdb;
         font-style: italic;
+        font-size: 1rem;
     `
     const Loading = styled.h1`
         text-align: center;
